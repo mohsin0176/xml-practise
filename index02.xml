@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<garden>
+
+<plants category="flower">
+	<name>Rose</name>
+	<color>Red</color>
+	<month>March</month>
+</plants>	
+<plants category="fruit">
+	<name>Jackfruit</name>
+	<color>Yellow</color>
+	<month>June</month>
+</plants>
+
+</garden>
