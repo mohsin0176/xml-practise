@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<company>
+<employee>
+<firstname>md</firstname>
+<lastname>mohsin</lastname>
+<contact>0132654789</contact>
+<email>msnju2010@gmail.com</email>
+<address>
+	<city>Dhaka</city>
+	<state>Savar</state>
+	<zip>1342</zip>
+</address>	
+</employee>	
+</company>
