@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<emails>
+<email>
+	<to>m@gmail.com</to>
+	<from>m@gmail.com</from>
+	<heading>Hello</heading>
+	<body>Hello,Brother</body>
+</email>
+<email>
+	<to>m@gmail.com</to>
+	<from>m@gmail.com</from>
+	<heading>Hello</heading>
+	<body>Hello,Brother</body>
+</email>
+<email>
+	<to>m@gmail.com</to>
+	<from>m@gmail.com</from>
+	<heading>Hello</heading>
+	<body>Hello,Brother</body>
+</email>
+<email>
+	<to>m@gmail.com</to>
+	<from>m@gmail.com</from>
+	<heading>Hello</heading>
+	<body>Hello,Brother</body>
+</email>
+<email>
+	<to>m@gmail.com</to>
+	<from>m@gmail.com</from>
+	<heading>Hello</heading>
+	<body>Hello,Brother</body>
+</email>
+<email>
+	<to></to>
+	<from></from>
+	<heading></heading>
+	<body></body>
+</email>
+<email>
+	<to></to>
+	<from></from>
+	<heading></heading>
+	<body></body>
+</email>
+</emails>
