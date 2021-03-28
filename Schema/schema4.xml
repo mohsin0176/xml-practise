@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<xs:elementname="Address1">
+<xs:complexType>
+<xs:sequence>
+	<xs:elementname="address"type="AddressType"/>
+	<xs:elementname="phone1"type="xs:int"/>
+</xs:sequence>	
+</xs:complexType>
+</xs:element>
+<xs:elementname="Address2">
+<xs:complexType>
+<xs:sequence>
+	<xs:elementname="address"type="AddressType"/>
+	<xs:elementname="phone2"type="xs:int"/>
+</xs:sequence>	
+</xs:complexType>
+</xs:element>
