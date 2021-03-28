@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Redaing XML File</title>
+ 	<script type="text/javascript">
+ 		function readXML()
+ 		{
+ 			var xml=new XMLHttpRequest();
+ 			xml.open('GET','xml.xml',false);
+ 			xml.send();
+ 			var xmlData=xml.responseXML;
+ 			if (!xmlData) 
+ 			{
+ 				xmlData=(new DOMParser()).parseFromString(xml.responseText,'text/xml');
+ 			}
+ 	var emp=xmlData.getElementsByTagName("employee");
+ 	var name=emp[0].getElementsByTagName("name")[0].firstChild.data;
+ 	var age=emp[0].getElementsByTagName("age")[0].firstChild.data;
+ 	var salary=emp[0].getElementsByTagName("salary")[0].firstChild.data;
+document.write("Name"+name+"<br>");
+document.write("Age"+age+"<br>");
+document.write("Salary"+salary+"<br>"); 	
+
+ 		}
+ 	</script>
+ </head>
+ <body>
+ <h1>XML FILE</h1>
+ <button onclick="readXML()">Read XML</button>
+ </body>
+ </html>
