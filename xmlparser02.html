@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XML PARSER</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var parser,xmlDoc;
+	var text="<bookstore><book>"+"<title>EveryDayItalian</title>"+
+	"<author>H.M.MOHSIN</author>"+
+	"<year>2005</year>"+
+	"</book></bookstore>";
+    if (window.DOMParser) 
+    {
+
+	parser=new DOMParser();
+	xmlDoc=parser.parseFromString(text,"text/xml");
+    }
+    else 
+    {
+    	xmlDoc=new ActiveXObject("MicrosoftXMLDOM");
+    	xmlDoc.async=false;
+    	xmlDoc.loadXML(text);
+    }
+	document.getElementById("demo").innerHTML=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+	
+</script>
+</body>
+</html>
