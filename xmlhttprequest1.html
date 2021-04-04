@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XMLHttpRequest</title>
+</head>
+<body>
+<h2>Using the XMLHttpRequest Object</h2>
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+
+<script type="text/javascript">
+	function loadXMLDoc()
+	{
+		if (window.XMLHttpRequest) 
+		{
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		 
+		xmlhttp.onreadystatechange=function()
+		{
+			if (this.readyState==4 && this.status==200) 
+			{
+				document.getElementById("demo").innerHTML=this.responseText;
+			}
+		};
+
+		xhttp.open("GET","xmlhttp_info.txt",true);
+		xhttp.send();
+	}
+</script>
+
+</body>
+</html>
